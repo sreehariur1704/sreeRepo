@@ -1,0 +1,50 @@
+show databases;
+create database firstdb;
+use firstdb;
+
+select * from user;
+show databases;
+use infytel_orm;
+
+select * from Booking ;
+drop table Booking;
+drop table user;
+drop table coach;
+show  table user;
+select * from booking ;
+select count(revenueInDollars) from movie where language= 'malayalam';
+ALTER TABLE Book DROP FOREIGN KEY FKac41x3930hi7ih5068vctn1ve;
+INSERT INTO Book (`book_name`, `country_of_origin`, `genre`, `language`, `price`, `published_date`, `publisher`, `rating`, `auth_author_name`) VALUES ('Adventures of Bheem', 'India', 'Story', 'English', '300', '2015-09-09 00:00:00.000000', 'BKS Pub', '5', 'jhon');
+insert into user 
+INSERT INTO Book (`book_name`, `country_of_origin`, `genre`, `language`, `price`, `published_date`, `publisher`, `rating`, `auth_author_name`) VALUES ('complete java reference', 'U.S', 'Tech', 'English', '800', '2017-09-09 00:00:00.000000', 'abcPub', '3', 'jhon');
+
+INSERT INTO Book (`book_name`, `country_of_origin`, `genre`, `language`, `price`, `published_date`, `publisher`, `rating`, `auth_author_name`) VALUES ('Let us c', 'U.S', 'Tech', 'English', '900', '2017-09-09 00:00:00.000000', 'BKS Pub', '3', 'raven');
+
+INSERT INTO Book (`book_name`, `country_of_origin`, `genre`, `language`, `price`, `published_date`, `publisher`, `rating`, `auth_author_name`) VALUES ('Let us c++', 'U.K', 'Tech', 'English', '200', '2017-09-09 00:00:00.000000', 'BKS Pub', '3', 'raven');
+
+INSERT INTO Book (`book_name`, `country_of_origin`, `genre`, `language`, `price`, `published_date`, `publisher`, `rating`, `auth_author_name`) VALUES ('Little krishna', 'India', 'Story', 'English', '500', '2016-09-09 00:00:00.000000', 'raman pub', '4', 'raven');
+
+INSERT INTO Book (`book_name`, `country_of_origin`, `genre`, `language`, `price`, `published_date`, `publisher`, `rating`, `auth_author_name`) VALUES ('Meta Modren era', 'India', 'Spiritual', 'English', '200', '2017-09-09 00:00:00.000000', 'SY Pub', '5', 'jhon');
+
+INSERT INTO Book (`book_name`, `country_of_origin`, `genre`, `language`, `price`, `published_date`, `publisher`, `rating`, `auth_author_name`) VALUES ('Panchatantra', 'India', 'Strory', 'Telugu', '600', '2013-07-07 00:00:00.000000', 'raman pub', '2', 'jhon');
+
+INSERT INTO Book (`book_name`, `country_of_origin`, `genre`, `language`, `price`, `published_date`, `publisher`, `rating`, `auth_author_name`) VALUES ('Autobiography of yogi', 'India', 'Spiritual', 'English', '100', '2012-01-01 00:00:00.000000', 'raman pub', '1', 'raven');
+
+
+
+INSERT INTO author(`rating`,`age`,`language`,`author_name`) VALUES (3,73, "english", "jhon");
+
+INSERT INTO author(`rating`,`age`,`language`,`author_name`) VALUES (2,75, "english", "raven");
+select * from booking;
+select * from coach;
+select * from user;
+ALTER TABLE Coach RENAME COLUMN booking_id TO coach_id;
+
+insert into user(user_id, name, gender, date_of_birth, password, mobile_number, email, pincode, city, state, country) 
+values('U18320209221001','Abhishek','M','1995-11-28','12345','9464927770','abhishek.v@gmail.com','160020','Chandigarh','Chandigarh','India');
+
+insert into coach(coach_id, name, gender, date_of_birth, password, mobile_number,speciality) 
+values('LC24320201946101','Neha','F','1999-03-07','12345','9876543210','Anxiety Specialist');
+
+insert into booking(booking_id, user_id,coach_id, appointment_date, slot) 
+values('1','U18320209221001','LC24320201946101','2020-11-10','3 PM to 4 PM');

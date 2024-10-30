@@ -1,5 +1,9 @@
 package com.medistore.repository;
 
-public interface CoachRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.medistore.entity.CoachEntity;
+
+public interface CoachRepository extends JpaRepository<CoachEntity,String> {
 
 }

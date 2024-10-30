@@ -25,7 +25,7 @@ import lombok.ToString;
 @EqualsAndHashCode 
 @Entity
 @Table(name = "Booking")
-class BookingEntity {
+public class BookingEntity {
 	@Id
 	@Column(name="booking_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,11 +33,11 @@ class BookingEntity {
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "user_id")
-	private UserEntity userId;
+	private UserEntity user;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "coach_id")
-	private CoachEntity coachId;
+	private CoachEntity coach;
 	
 	
 	@Column(name = "appointment_date")

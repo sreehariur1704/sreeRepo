@@ -6,4 +6,7 @@ import com.medistore.entity.UserEntity;
 
 public interface UserRepository extends JpaRepository<UserEntity,String>{
 
+
+	UserEntity getUserByUserId(String username);
+
 }
