@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -27,6 +29,10 @@ public class CoachEntity {
 	private String coachId;
 	private String name;
 	private String gender;
+	
+//	@Column(nullable = false)
+//	@Enumerated(value=EnumType.STRING)
+//	private Gender gender;
 	
 	@Column(name = "date_of_birth")
 	private LocalDate dateOfBirth;

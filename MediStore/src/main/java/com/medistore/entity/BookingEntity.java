@@ -36,7 +36,7 @@ public class BookingEntity {
 	private UserEntity user;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "coach_id")
+	@JoinColumn(referencedColumnName="coach_id" ,name = "coach_id")
 	private CoachEntity coach;
 	
 	

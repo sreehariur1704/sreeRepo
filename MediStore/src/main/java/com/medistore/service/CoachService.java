@@ -12,10 +12,9 @@ import com.medistore.dto.CoachDTO;
 import com.medistore.entity.BookingEntity;
 import com.medistore.entity.CoachEntity;
 import com.medistore.mapper.CustomModelConverter;
+import com.medistore.mapper.MapStrutModelMapper;
 import com.medistore.repository.BookingRepository;
 import com.medistore.repository.CoachRepository;
-
-import jakarta.validation.Valid;
 
 @Service
 public class CoachService implements ICoachService {
@@ -50,7 +49,9 @@ public class CoachService implements ICoachService {
 		if(coachEntity.isEmpty()) {
 			return null;
 		}else {
-			return converter.coachEntityToDto(coachEntity.get());
+			//return converter.coachEntityToDto(coachEntity.get());
+			
+			return MapStrutModelMapper.INSTANCE.coachEntityToDto(coachEntity.get());
 		}
 	}
 
